@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уебсайт на Animal Hope Varna. Осиновяване на животни, доброволчество и грижа за животните.">
+    <meta name="keywords" content="Animal Hope Varna, осиновяване, животни, доброволчество, дарения">
+    <meta name="author" content="Ванеса Матева">
+    <title>Дейности - Animal Hope Varna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navAndFooter.css">
+  <style> 
+
+.adoption .activity-img {
+    width: 30%; 
+    max-width: 300px; 
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; 
+}
+
+section.funding {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.funding .content {
+    flex: 1; 
+    max-width: 60%; 
+}
+
+.funding .activity-img {
+    width: 35%; 
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table thead {
+    background-color: #FF7F00;
+    color: white;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #f9d2a1;
+}
+
+a {
+    color: #FF7F00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Лого">
+        </div>
+    
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li>
+                    <a href="aboutUs.html">За нас</a>
+                    <ul>
+                        <li><a href="historyAndAchievements.html">История и постижения</a></li>
+                        <li><a href="partners.html">Партньори</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="activities.html">Дейности</a>
+                </li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li>
+                    <a href="additionalInfo.html">Допълнителна информация</a>
+                    <ul>
+                        <li><a href="additionalInfo.html#extra-faq">Осиновяване</a></li>
+                        <li><a href="additionalInfo.html#extra-donations">Дарения</a></li>
+                        <li><a href="additionalInfo.html#extra-volunteering">Доброволчество</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+        <!-- Меню за мобилни устройства -->
+        <nav class="full-screen-menu">
+            
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li><a href="aboutUs.html">За нас</a></li>
+                <li><a href="activities.html">Дейности</a></li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="additionalInfo.html">Допълнителна информация</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section class="activity">
+        <h2>1. Спасителна и лечебна дейност</h2>
+        <p>Нашият екип работи неуморно за спасяването на бездомни, ранени или изоставени животни, като осигурява спешна ветеринарна помощ и рехабилитация.</p>
+    </section>
+    
+    <section class="adoption">
+        <h2>2. Приютяване и осиновяване</h2>
+        <p>Приютяваме животни във временни домове, докато намерим любящи осиновители. Работим както с местни семейства, така и с международни партньори.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Стъпка</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Попълване на въпросник</td>
+                    <td>Потенциалният осиновител предоставя информация за себе си.</td>
+                </tr>
+                <tr>
+                    <td>Оценка на дома</td>
+                    <td>Проверяваме условията за животното.</td>
+                </tr>
+                <tr>
+                    <td>Подписване на договор</td>
+                    <td>Гаранция, че животното ще бъде третирано като член на семейството.</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="static/adoptUs.png" alt="Осиновено животно" class="activity-img">
+    </section>
+    
+    <section class="prevention">
+        <h2>3. Програми за кастрация и превенция</h2>
+        <p>За да намалим популацията на бездомни животни, провеждаме кастрации, чипиране и ваксинации, както и информационни кампании за отговорно отношение към домашните любимци.</p>
+    </section>
+    
+    <section class="funding">
+        <h2>4. Финансиране и партньорства</h2>
+        <p>Цялата ни дейност се финансира от дарения. Работим с местни зоомагазини, ветеринарни клиники и международни организации.</p>
+        <img src="static/donate.png" alt="Дарения за Animal Hope Varna" class="activity-img">
+    </section>
+    
+    <section class="education">
+        <h2>5. Образователна и информационна дейност</h2>
+        <p>Организираме семинари и кампании за образоване на обществото относно проблемите на бездомните животни и тяхното решаване.</p>
+    </section>
+</main>
+
+    <footer>
+        <div class="quick-links">
+            <h3>Бързи връзки</h3>
+            <ul>
+                <li><a href="about.html">Научете повече за нас →</a></li>
+                <li><a href="activities.html">Вижте нашите дейности →</a></li>
+                <li><a href="adoption.html">Разгледайте животните за осиновяване →</a></li>
+                <li><a href="gallery.html">Посетете галерията →</a></li>
+                <li><a href="contacts.html">Свържете се с нас →</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Контакт с нас</h3>
+            <p>
+                <strong>Адрес:</strong> 
+                <a href="https://www.google.com/maps?q=Левски+9000,+Варна,+България" target="_blank">
+                    Левски 9000, Варна, България
+                </a>
+            </p>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:animal.hope.varna.bg@gmail.com">animal.hope.varna.bg@gmail.com</a>
+            </p>
+            <p>
+                <strong>Телефон:</strong> 
+                <a href="tel:+359888888888">+359 888 888 888</a>
+            </p>
+        </div>        
+        <div class="social-media">
+            <h3>Моля подкрепете ни – ЗАЩОТО ЗАЕДНО МОЖЕМ ПОВЕЧЕ!</h3>
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" ></a>
+            |
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"  ></a>
+            |
+            <a href="https://www.paypal.com/paypalme/ANIMALHOPEVARNA" target="_blank" class="fa fa-paypal"></a>
+        </div>
+        <div class="copyright">
+            <p>© Animal Hope Varna, 2025</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

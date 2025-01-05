@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уебсайт на Animal Hope Varna. Осиновяване на животни, доброволчество и грижа за животните.">
+    <meta name="keywords" content="Animal Hope Varna, осиновяване, животни, доброволчество, дарения">
+    <meta name="author" content="Ванеса Матева">
+    <title>Контакти - Animal Hope Varna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navAndFooter.css">
+  <style> 
+section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333; 
+    text-align: center; 
+    line-height: 1.2;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px; 
+    color: #FF7F00; 
+    border-radius: 10px; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.contact-info a {
+    color: #FF7F00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info img {
+    width: 80%; 
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-top: 20px; 
+}
+
+.contact-info img:hover {
+    transform: scale(1.05); 
+}
+
+.contact-info p.map-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 15px;
+    background-color: #FF7F00;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #FF7F00;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #FF7F00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #e96f00;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Лого">
+        </div>
+    
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li>
+                    <a href="aboutUs.html">За нас</a>
+                    <ul>
+                        <li><a href="historyAndAchievements.html">История и постижения</a></li>
+                        <li><a href="partners.html">Партньори</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="activities.html">Дейности</a>
+                </li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li>
+                    <a href="additionalInfo.html">Допълнителна информация</a>
+                    <ul>
+                        <li><a href="additionalInfo.html#extra-faq">Осиновяване</a></li>
+                        <li><a href="additionalInfo.html#extra-donations">Дарения</a></li>
+                        <li><a href="additionalInfo.html#extra-volunteering">Доброволчество</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+        <!-- Меню за мобилни устройства -->
+        <nav class="full-screen-menu">
+            
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li><a href="aboutUs.html">За нас</a></li>
+                <li><a href="activities.html">Дейности</a></li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="additionalInfo.html">Допълнителна информация</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <section>
+        <h1>Контакт с нас</h1>
+        <div class="contact-info">
+            <p><strong>Адрес:</strong> 
+                <a href="https://www.google.com/maps?q=гр.+Варна,+ул.+Примерна+1" target="_blank">
+                    гр. Варна, ул. "Примерна" 1
+                </a>
+            </p>
+            <p><strong>Email:</strong> 
+                <a href="mailto:animal.hope.varna.bg@gmail.com">animal.hope.varna.bg@gmail.com</a>
+            </p>
+            <p><strong>Телефон:</strong> 
+                <a href="tel:+359888888888">+359 888 888 888</a>
+            </p>
+            <p><strong>Карта на местоположението:</strong></p>
+            <a href="https://www.google.com/maps?q=гр.+Варна,+ул.+Примерна+1" target="_blank">
+                <img src="static/location.png" alt="Местоположение на картата">
+            </a>
+            <p class="map-description">Натиснете върху картата, за да видите местоположението ни в Google Maps.</p>
+        </div>
+    </section>
+
+    <section>
+        <h1>Социални медии</h1>
+        <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://www.paypal.com/paypalme/ANIMALHOPEVARNA" target="_blank">PayPal</a>
+        </div>
+    </section>
+</main>
+
+    <footer>
+        <div class="quick-links">
+            <h3>Бързи връзки</h3>
+            <ul>
+                <li><a href="about.html">Научете повече за нас →</a></li>
+                <li><a href="activities.html">Вижте нашите дейности →</a></li>
+                <li><a href="adoption.html">Разгледайте животните за осиновяване →</a></li>
+                <li><a href="gallery.html">Посетете галерията →</a></li>
+                <li><a href="contacts.html">Свържете се с нас →</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Контакт с нас</h3>
+            <p>
+                <strong>Адрес:</strong> 
+                <a href="https://www.google.com/maps?q=Левски+9000,+Варна,+България" target="_blank">
+                    Левски 9000, Варна, България
+                </a>
+            </p>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:animal.hope.varna.bg@gmail.com">animal.hope.varna.bg@gmail.com</a>
+            </p>
+            <p>
+                <strong>Телефон:</strong> 
+                <a href="tel:+359888888888">+359 888 888 888</a>
+            </p>
+        </div>        
+        <div class="social-media">
+            <h3>Моля подкрепете ни – ЗАЩОТО ЗАЕДНО МОЖЕМ ПОВЕЧЕ!</h3>
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" ></a>
+            |
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"  ></a>
+            |
+            <a href="https://www.paypal.com/paypalme/ANIMALHOPEVARNA" target="_blank" class="fa fa-paypal"></a>
+        </div>
+        <div class="copyright">
+            <p>© Animal Hope Varna, 2025</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

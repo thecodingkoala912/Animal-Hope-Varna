@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уебсайт на Animal Hope Varna. Осиновяване на животни, доброволчество и грижа за животните.">
+    <meta name="keywords" content="Animal Hope Varna, осиновяване, животни, доброволчество, дарения">
+    <meta name="author" content="Ванеса Матева">
+    <title>За нас | Animal Hope Varna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navAndFooter.css">
+<style>
+section ul,
+section ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+section ul li,
+section ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+section a {
+    color: #FF7F00;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* кутии за донация*/
+.donation-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #feecde; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.left-content {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    max-width: 300px;
+}
+
+.donation-box-image {
+    max-width: 100%;
+    margin-top: 50px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.right-content {
+    flex: 2;
+    padding: 10px 20px;
+    max-width: calc(100% - 320px);
+}
+
+.right-content h2 {
+    color: #FF7F00; 
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.donation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.donation-list li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: #333; 
+}
+
+.donation-list i {
+    margin-right: 10px; 
+    font-size: 1.8rem; 
+    color: #FF7F00; 
+}
+
+.donation-list a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.donation-list a:hover {
+    color:  #ff9800; 
+}
+
+@media (max-width: 768px) {
+    .donation-boxes {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .left-content {
+        max-width: 100%;
+    }
+
+}
+
+#animals-image {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Лого">
+        </div>
+    
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li>
+                    <a href="aboutUs.html">За нас</a>
+                    <ul>
+                        <li><a href="historyAndAchievements.html">История и постижения</a></li>
+                        <li><a href="partners.html">Партньори</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="activities.html">Дейности</a>
+                </li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li>
+                    <a href="additionalInfo.html">Допълнителна информация</a>
+                    <ul>
+                        <li><a href="additionalInfo.html#extra-faq">Осиновяване</a></li>
+                        <li><a href="additionalInfo.html#extra-donations">Дарения</a></li>
+                        <li><a href="additionalInfo.html#extra-volunteering">Доброволчество</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+        <!-- Меню за мобилни устройства -->
+        <nav class="full-screen-menu">
+            
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li><a href="aboutUs.html">За нас</a></li>
+                <li><a href="activities.html">Дейности</a></li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="additionalInfo.html">Допълнителна информация</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <section class="about-the-foundation">
+            <h2>За фондацията</h2>
+            <p>Ние сме екип от доброволци, обединени от желанието да създадем живот без болка за бездомните животни в град Варна. Работим неуморно, за да осъществим тази наша мечта, като осигуряваме на бездомничетата:</p>
+            <ul>
+                <li><strong>Ветеринарна помощ</strong> за ранените и болните,</li>
+                <li><strong>Приютяване</strong> във временни домове,</li>
+                <li><strong>Чипиране, кастриране, ваксиниране и обезпаразитяване,</strong></li>
+                <li><strong>Намиране на отговорни нови собственици,</strong> които ще ги дарят с вечен дом, грижа и любов.</li>
+            </ul>
+            <img id="animals-image" src="static/animals1.jpg" alt="Animals"/>
+           </section>
+
+            <section class="adoption">
+            <h2>Осиновяване на животни</h2>
+            <p>Ние търсим осиновители предимно в България. Ако не намерим подходящ дом тук, с помощта на доброволци от други страни, животинките ни намират домове в Германия, Австрия, Швейцария, Финландия, Холандия, Англия и Италия.</p>
+            <p>За да намерим най-доброто място за нашите изстрадали животни, всички потенциални осиновители трябва:</p>
+            <ol>
+                <li>Да попълнят въпросник.</li>
+                <li>Да предоставят информация за себе си.</li>
+                <li>Да подпишат договор при осиновяването.</li>
+            </ol>
+            <p>Животните ни се дават <strong>само за домашни любимци</strong>, които ще бъдат третирани като членове на семейството. Не ги предоставяме за:</p>
+            <ul>
+                <li>Кучета пазачи, които ще бъдат вързани на синджир.</li>
+                <li>Мишеловки, които ще бъдат хранени с отпадъци.</li>
+            </ul>
+            </section>
+
+        <section class="financing">
+            <h2>Финансиране и дарения</h2>
+            <p>Всички членове на нашата организация са доброволци. Средствата за помощта, която оказваме, се събират изцяло от дарения. Не получаваме държавна помощ и често дължим стотици левове на ветеринарните клиники. Благодарение на клиниките, с които имаме договори, можем да работим на преференциални цени и условия за бездомните животни.</p>
+            <p><strong>Нашите дарителски кутии</strong> са поставени в някои от клиниките, с които работим, и всеки може да помогне за лечението на животните.</a></p>
+            <section class="donation-boxes">
+                <div class="left-content">
+                    <img src="static/box.jpg" alt="Кутия за дарения" class="donation-box-image">
+                </div>
+                <div class="right-content">
+                    <h2>Кутии за дарение</h2>
+                    <ul class="donation-list">
+                        <li>
+                            <i class="fa fa-paw"></i>
+                            <a href="https://maps.google.com/?q=Зоомагазин РАЯ, Варна, Възраждане 2 западно от бл.45" target="_blank">Зоомагазин “РАЯ” - кв.Възраждане 2 западно от бл.45</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-paw"></i>
+                            <a href="https://maps.google.com/?q=Зоомагазин Клеопатра, Варна, кв.Владиславово, битов комбинат тяло 1 до бл.20" target="_blank">Зоомагазин “Клеопатра” - кв.Владиславово, битов комбинат тяло 1 до бл.20</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-paw"></i>
+                            <a href="https://maps.google.com/?q=Зоомагазин Том, Варна, ул.Македония 157" target="_blank">Зоомагазин “Том” - ул.Македония 157</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-paw"></i>
+                            <a href="https://maps.google.com/?q=Магазин Зооленд, Варна, ул. Д-р Пискюлиев 72-74" target="_blank">Магазин Зооленд - ул. Д-р Пискюлиев 72-74</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+    <section class="info">
+            <h2>Данни за фондацията</h2>
+            <p><strong>Юридическо лице:</strong> АНИМАЛ ХОУП ВАРНА</p>
+            <p><strong>Контакти:</strong> <a href="mailto:animal.hope.varna.bg@gmail.com">animal.hope.varna.bg@gmail.com</a></p>
+    </section>
+    </main>
+    
+    <footer>
+        <div class="quick-links">
+            <h2>Бързи връзки</h2>
+            <ul>
+                <li><a href="about.html">Научете повече за нас →</a></li>
+                <li><a href="activities.html">Вижте нашите дейности →</a></li>
+                <li><a href="adoption.html">Разгледайте животните за осиновяване →</a></li>
+                <li><a href="gallery.html">Посетете галерията →</a></li>
+                <li><a href="contacts.html">Свържете се с нас →</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Контакт с нас</h3>
+            <p>
+                <strong>Адрес:</strong> 
+                <a href="https://www.google.com/maps?q=Левски+9000,+Варна,+България" target="_blank">
+                    Левски 9000, Варна, България
+                </a>
+            </p>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:animal.hope.varna.bg@gmail.com">animal.hope.varna.bg@gmail.com</a>
+            </p>
+            <p>
+                <strong>Телефон:</strong> 
+                <a href="tel:+359888888888">+359 888 888 888</a>
+            </p>
+        </div>        
+        <div class="social-media">
+            <h3>Моля подкрепете ни – ЗАЩОТО ЗАЕДНО МОЖЕМ ПОВЕЧЕ!</h3>
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" ></a>
+            |
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"  ></a>
+            |
+            <a href="https://www.paypal.com/paypalme/ANIMALHOPEVARNA" target="_blank" class="fa fa-paypal"></a>
+        </div>
+        <div class="copyright">
+            <p>© Animal Hope Varna, 2025</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

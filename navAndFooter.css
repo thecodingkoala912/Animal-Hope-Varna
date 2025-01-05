@@ -1,0 +1,397 @@
+/*GENERAL*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    background-image: url('static/background4.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    font-size: 1rem;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 1200px;
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #FF7F00; 
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #333; 
+    font-size: 2rem; 
+    margin-top: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    section h2 {
+        font-size: 1.6rem; 
+    }
+}
+
+/*NAVIGATION*/
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+nav ul li {
+    position: relative; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 30px 30px;
+    display: block;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: #555; 
+}
+
+nav ul li ul {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+nav ul li:hover > ul {
+    display: block; 
+}
+
+nav ul li ul li a {
+    color: #333;
+    padding: 30px 30px;
+    text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+    background-color: #ddd;
+    color:#ff9800;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Меню на пълен екран */
+.full-screen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.full-screen-menu.open {
+    display: flex; 
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.full-screen-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.full-screen-menu li {
+    margin: 20px 0;
+    display: block;
+}
+
+.full-screen-menu li a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 20px;
+}
+
+.full-screen-menu li a:hover {
+    color: #ff9800;
+}
+
+/* Стилове за мобилни устройства */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo, .navigation {
+        display: none; 
+    }
+
+    .full-screen-menu {
+        display: none; 
+    }
+
+    .full-screen-menu.open {
+        display: flex; 
+    }
+
+    .full-screen-menu ul {
+        display: block;
+    }
+
+    .full-screen-menu li {
+        margin: 20px 0;
+    }
+    nav ul {
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+        background-color: #333; 
+    }
+
+    nav ul li a {
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul li ul {
+        position: relative; 
+    }
+
+    nav ul li:hover > ul {
+        position: static; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+}
+
+
+/* Стилове за големи екрани */
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none; 
+    }
+
+    .logo, .navigation {
+        display: flex; 
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li ul {
+        display: none; 
+    }
+
+    nav ul li:hover > ul {
+        display: block; 
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #f2f2f2;
+    padding: 0px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2; 
+}
+footer > div:not(.copyright) {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    margin-bottom: 5px;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+    width: 100%;
+    text-align: center; 
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #FF7F00; 
+}
+
+section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+    color: #555;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action h2 {
+    margin-bottom: 20px;
+}
+
+.call-to-action .cta-buttons .button {
+    display: inline-block;
+    background-color: #f97304; 
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.call-to-action .cta-buttons .button:hover {
+    background-color: #d86003;
+}
+
+
+.quick-links ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quick-links ul li {
+    margin: 5px 0;
+}
+
+.quick-links ul li a {
+    text-decoration: none;
+    color: #f97304;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+    color: #d86003; 
+}
+.social-media a {
+    font-size: 30px; 
+    margin: 0 15px;
+    text-decoration: none;
+    color:  #f97304; 
+}
+
+.social-media a:hover {
+    color: #d86003; 
+}

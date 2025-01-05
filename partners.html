@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Уебсайт на Animal Hope Varna. Осиновяване на животни, доброволчество и грижа за животните.">
+    <meta name="keywords" content="Animal Hope Varna, осиновяване, животни, доброволчество, дарения">
+    <meta name="author" content="Ванеса Матева">
+    <title>Партньори - Animal Hope Varna</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navAndFooter.css">
+  <style> 
+
+.veterinary-clinics {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.clinic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    gap: 40px;
+}
+
+.clinic h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.clinic p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.clinic-logo {
+    width: 150px; 
+    height: auto;
+    margin-left: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clinic a:not(.arrow){
+    text-decoration: none;
+    color: #FF7F00;
+    font-weight: bold;
+}
+
+.clinic a:hover {
+    text-decoration: underline;
+}
+
+.arrow {
+    background-color: #FF7F00;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.arrow:hover {
+    background-color: #e96f00;
+}
+
+
+@media (max-width: 768px) {
+    .clinic {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clinic-logo {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/logo.png" alt="Лого">
+        </div>
+    
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li>
+                    <a href="aboutUs.html">За нас</a>
+                    <ul>
+                        <li><a href="historyAndAchievements.html">История и постижения</a></li>
+                        <li><a href="partners.html">Партньори</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="activities.html">Дейности</a>
+                </li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li>
+                    <a href="additionalInfo.html">Допълнителна информация</a>
+                    <ul>
+                        <li><a href="additionalInfo.html#extra-faq">Осиновяване</a></li>
+                        <li><a href="additionalInfo.html#extra-donations">Дарения</a></li>
+                        <li><a href="additionalInfo.html#extra-volunteering">Доброволчество</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    
+        <!-- Меню за мобилни устройства -->
+        <nav class="full-screen-menu">
+            
+            <ul>
+                <li><a href="home.html">Начало</a></li>
+                <li><a href="aboutUs.html">За нас</a></li>
+                <li><a href="activities.html">Дейности</a></li>
+                <li><a href="news.html">Новини и събития</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="additionalInfo.html">Допълнителна информация</a></li>
+                    
+            </ul>
+        </nav>
+    </header>
+<main>
+    <section class="partners-section">
+        <h2>Наши Партньори</h2>
+        <p>Ние работим в тясно сътрудничество с множество организации и компании, които ни помагат да постигнем нашата мисия. Някои от нашите основни партньори включват:</p>
+        
+        <ul class="partners-list">
+            <li>
+                <h4>Фондация за защита на животните</h4>
+                <p>Помагат ни със средства и обучение на доброволци.</p>
+            </li>
+            <li>
+                <h4>Ветеринарни клиники в региона</h4>
+                <p>Предоставят медицинска грижа за животните ни.</p>
+            </li>
+            <li>
+                <h4>Приятели на животните</h4>
+                <p>Доброволци и донори, които ни подкрепят.</p>
+            </li>
+        </ul>
+
+        <p>Присъединете се към нашата кауза! Станете част от нашето семейство, като помогнете с време, ресурси или просто като разпространите информацията за нас. Вашата подкрепа е безценна!</p>
+    </section>
+        <section class="veterinary-clinics">
+            <h2>Наши ветеринарни партньори</h2>
+            <div class="clinic">
+                <img src="static/vetClinic2.png" alt="Амбулатория „Филипови“ Logo" class="clinic-logo">
+                <h3>Амбулатория „Филипови“</h3>
+                <p><strong>Адрес:</strong> <a href="https://www.google.com/maps?q=ул.+Иван+Срацимир+5" target="_blank">ул. Иван Срацимир 5</a></p>
+                <p><strong>Работно време:</strong> Пон – Петък 8:30 – 19:00 | Събота 8:30 – 14:00 | Неделя 10:00 – 13:00</p>
+                <p><strong>Телефон:</strong> <a href="tel:+35952601910">052 601 910</a> и <a href="tel:+359899767533">0899 767 533</a></p>
+                <p><strong>Email:</strong> <a href="mailto:vet_commerce@abv.bg">vet_commerce@abv.bg</a></p>
+                <a class="arrow" href="https://www.vet-varna.com/bg/" target="_blank">Към Страницата на Амбулатория “Филипови”</a>
+            </div>
+            
+            <div class="clinic">
+                <img src="static/vetClinic3.png" alt="Преси Вет Logo" class="clinic-logo">
+                <h3>Преси Вет</h3>
+                <p><strong>Адрес:</strong> <a href="https://www.google.com/maps?q=ул.+Константин+Величков+63" target="_blank">ул. „Константин Величков“ 63</a></p>
+                <p><strong>Работно време:</strong> Пон – Петък 9:00 – 18:00 | Събота 10:00 – 13:00</p>
+                <p><strong>Телефон:</strong> <a href="tel:+359899373237">0899373237</a></p>
+                <p><strong>Email:</strong> <a href="mailto:presi.vet@abv.bg">presi.vet@abv.bg</a></p>
+                <a class="arrow" href="https://www.facebook.com/profile.php?id=100065333475803" target="_blank">Към Страницата на Преси Вет</a>
+            </div>
+            
+            <div class="clinic">
+                <img src="static/vetClinic1.png" alt="Д-р Манолов Logo" class="clinic-logo">
+                <h3>Ветеринар Д-р Манолов</h3>
+                <p><strong>Адрес:</strong> <a href="https://www.google.com/maps?q=Христо+Ботев+Одесос,+ул.+„Капитан+Райчо+Николов“+36,+9000+Варна" target="_blank">Христо Ботев Одесос, ул. „Капитан Райчо Николов“ 36, 9000 Варна</a></p>
+                <p><strong>Работно време:</strong> Всеки ден от 8:00 до 20:00</p>
+                <p><strong>Телефон:</strong> <a href="tel:+35952624747">052 624747</a></p>
+                <p><strong>Email:</strong> <a href="mailto:mvet_1966@abv.bg">mvet_1966@abv.bg</a></p>
+                <a class="arrow" href="https://www.facebook.com/Mveterinary/" target="_blank">Към Страницата на Д-р Манолов</a>
+            </div>
+        </section>
+</main>
+
+    <footer>
+        <div class="quick-links">
+            <h3>Бързи връзки</h3>
+            <ul>
+                <li><a href="about.html">Научете повече за нас →</a></li>
+                <li><a href="activities.html">Вижте нашите дейности →</a></li>
+                <li><a href="adoption.html">Разгледайте животните за осиновяване →</a></li>
+                <li><a href="gallery.html">Посетете галерията →</a></li>
+                <li><a href="contacts.html">Свържете се с нас →</a></li>
+            </ul>
+        </div>
+        <div class="contact-info">
+            <h3>Контакт с нас</h3>
+            <p>
+                <strong>Адрес:</strong> 
+                <a href="https://www.google.com/maps?q=Левски+9000,+Варна,+България" target="_blank">
+                    Левски 9000, Варна, България
+                </a>
+            </p>
+            <p>
+                <strong>Email:</strong> 
+                <a href="mailto:animal.hope.varna.bg@gmail.com">animal.hope.varna.bg@gmail.com</a>
+            </p>
+            <p>
+                <strong>Телефон:</strong> 
+                <a href="tel:+359888888888">+359 888 888 888</a>
+            </p>
+        </div>        
+        <div class="social-media">
+            <h3>Моля подкрепете ни – ЗАЩОТО ЗАЕДНО МОЖЕМ ПОВЕЧЕ!</h3>
+            <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook" ></a>
+            |
+            <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"  ></a>
+            |
+            <a href="https://www.paypal.com/paypalme/ANIMALHOPEVARNA" target="_blank" class="fa fa-paypal"></a>
+        </div>
+        <div class="copyright">
+            <p>© Animal Hope Varna, 2025</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
